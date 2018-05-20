@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-navbar color="dark">
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Guest Manager</ion-title>
+      </ion-navbar>
+
+  <ion-navbar>
+      
+    <ion-title>Accueil</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding="true" style="background: url(../assets/imgs/bg.png) no-repeat center;background-size:cover;" >
+  <div id="accueil-container1">
+    <ion-card>
+          <ion-card-header>
+              <div id="accueil-markdown3" style="text-align:center;" class="show-list-numbers-and-dots">
+                  <p style="color:brown;font-size:20px;">Mariage d'Emiline et Ignace</p>
+                </div>
+          </ion-card-header>
+          <ion-card-content>
+              <ion-slides pager disable-side-menu-drag="" options="{'loop': true}" slider="slider2" delegate-handle="slider2" id="accueil-slider2" style="width:100%;height:200px;">
+                  <ion-slide  style="background:url(../assets/imgs/slide1.jpg) no-repeat center;background-size:cover;"></ion-slide>
+                  <ion-slide  style="background:url(../assets/imgs/slide2.jpg) no-repeat center;background-size:cover;"></ion-slide>
+                  <ion-slide style="background:url(../assets/imgs/slide3.jpg) no-repeat center;background-size:cover;"></ion-slide>
+                </ion-slides>
+                <p style="margin-top:30px;color:#000000;text-align:center;"><ion-icon name="home"></ion-icon>&nbsp;Conflans-Ste-Honorine<br/>
+                  <ion-icon name="calendar">&nbsp;1-2 Juin 2018</ion-icon>
+                </p>
+          </ion-card-content>
+        </ion-card>
+  </div>
+  
+  <ion-footer>
+      <ion-toolbar>
+        <ion-title >&copy; zhema iris</ion-title>
+      </ion-toolbar>
+    </ion-footer>

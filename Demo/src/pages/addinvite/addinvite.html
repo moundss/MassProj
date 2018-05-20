@@ -1,0 +1,50 @@
+<!--
+  Generated template for the AddinvitePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Ajout invité</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding="true" style="background: url(../assets/imgs/bg.png) no-repeat center;background-size:cover;" >
+  <ion-card>
+      <ion-card-header>
+        Veuillez renseigner le formulaire ci-dessous
+      </ion-card-header>
+      <ion-card-content>
+          <ion-list inset>
+  
+              <ion-item>
+                <ion-label>Designation</ion-label>
+                <ion-input type="text" [(ngModel)]="designation"></ion-input>
+              </ion-item>
+            
+              <ion-item>
+                  <ion-label>Table</ion-label>
+    <ion-select [(ngModel)]="table" interface="action-sheet">
+      <ion-option value="nes">NES</ion-option>
+      <ion-option value="n64">Nintendo64</ion-option>
+      <ion-option value="ps">PlayStation</ion-option>
+      <ion-option value="genesis">Sega Genesis</ion-option>
+      <ion-option value="saturn">Sega Saturn</ion-option>
+      <ion-option value="snes">SNES</ion-option>
+    </ion-select>
+            </ion-item>
+            </ion-list>
+            <button ion-button block (click)="enregistre()">Enregistrer</button>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+  
+  <ion-footer>
+      <ion-toolbar>
+        <ion-title >&copy; zhema iris</ion-title>
+      </ion-toolbar>
+    </ion-footer>
